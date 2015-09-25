@@ -13,12 +13,12 @@
     "require": {
         "php": ">=5.3.3",
         "symfony/framework-bundle": ">=2.1.0",
-        "snc/redis-bundle": "dev-master",
+        "snc/redis-bundle": "dev-new",
         "predis/predis": "0.8.5"        
     },    
     "autoload": {
         "psr-0": {            
-            "Sunra\\RedisOptions": "Src/"
+            "Sunra\\RedisOptions": "src/"
         }
     }    
 }
