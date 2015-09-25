@@ -58,7 +58,7 @@ class RedisOptions {
 			if ($TTL) { 
 				
 				if($TTL_milliseconds) {
-					//$res = $this->redis->psetex( $name, $TTL, serialize($value) );  // not work in redis 2.4
+					//$res = $this->redis->psetex( $name, $TTL, serialize($value) );  //why not you work in redis 2.4
 					$res = $this->redis->setex( $name, $TTL=1, serialize($value) ); 
 				} else {
 				    $res = $this->redis->setex( $name, $TTL, serialize($value) ); 
